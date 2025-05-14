@@ -1,0 +1,13 @@
+sample document for practisisng
+This package contains third party integrations that are maintained by the LangChain community. Key partner packages are separated out (see below). This contains all integrations for various components (LLMs, vector stores, retrievers). All dependencies in this package are optional to keep the package as lightweight as possible.
+Partner packages
+While the long tail of integrations are in @langchain/community, we split popular integrations into their own packages (e.g. langchain-openai, langchain-anthropic, etc). This was done in order to improve support for these important integrations.
+langchain
+The main langchain package contains chains, agents, and retrieval strategies that make up an application's cognitive architecture. These are NOT third party integrations. All chains, agents, and retrieval strategies here are NOT specific to any one integration, but rather generic across all integrations.
+The output indicates that the CharacterTextSplitter is creating chunks larger than the specified chunk_size of 20 characters. This usually happens when the splitter cannot find the specified separator within the given chunk size, so it defaults to creating a larger chunk rather than arbitrarily cutting the text.
+
+Understanding the Output:
+Chunk Size Exceeded: The message "Created a chunk of size 329, which is longer than the specified 20" suggests that the splitter couldn't find a suitable place to split the text within the specified 20 characters. As a result, it extended the chunk size to include a full sentence or paragraph, depending on the structure of your text.
+Seeing How Chunks Were Split:
+To better understand how the text was split, you can iterate through the chunk_text list and print each chunk with its size:
+"""

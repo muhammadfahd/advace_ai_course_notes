@@ -1,0 +1,19 @@
+embedding [ numerical represenatation - vector form]
+after splttinng the document into chunks the next step is embedding . so for this purpose we use embedding models. 
+Actually they take input and convert them into the numerical representation so we can perfrom mathematical operations which will be helpful in retrieving our document . So semantic serach also become possible . in semantic search the words whose meanings are closer their numerical represeantion is also closer. 
+wehere this emebddings can be be useful 
+1.similarity search ( to measure similarity between different instance especiallt NLP tasks)
+2.clustering and classification ( where we can use emebeding as input features)
+3.information retreieval (we can utilizize theses emedidngs to build search engine)
+4.Recommendation systems ( by taking advantage of these recommend prouduct,articles or media to user)
+
+
+
+for this purpseose EMbeddings class is sued. there are several provider like openai. Some are open-source while other need payment . we can pass them either document  (multiple text ) or quer-(single text).
+Some of the emending models are 
+A121 Labs 
+Azure OpenAI
+GigaChat
+Google Generarative AI Emebeddigs
+
+
